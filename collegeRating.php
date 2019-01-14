@@ -54,6 +54,7 @@ session_start();
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="CSSFile.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
@@ -61,41 +62,7 @@ session_start();
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
-#collegeN{text-align: right;}
-a:hover#collegeN{ color: green;}
-#containerDiv{
-	width: 800px; 
-	margin-right: 50px; 
-	min-height:100px;
-    overflow:auto;
-    height:auto;
-	margin-top: 30px;
-	padding-bottom: 10px;
-	padding-right: 10px;
-}
-#wrapper {
-    width: 1350px;
-    height:auto;
-	background: blue;
-	float: center;
-}
 
-#first {
-    float:right;
-    width: 50%;
-    height: 100%;
-	padding: 10px;
-}
-
-#second {
-    float:right;
-    width: 50%;
-    height: 100%;
-	padding: 10px;
-}
-
-  /* font-family: 'Amiri', serif; */
-  
 hr {
     display: block;
     height: 1px;
@@ -104,15 +71,6 @@ hr {
     margin: 1em 0;
     padding: 0; 
 }
-/* arabic */
-@font-face {
-  font-family: 'Amiri';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Amiri'), local('Amiri-Regular'), url(https://fonts.gstatic.com/s/amiri/v7/Pmj8RyKsUWpsaz_klfK4LA.woff2) format('woff2');
-  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
-}
-
 </style>
 <body class="w3-light-grey">
 
@@ -231,11 +189,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 	    
    
 	<div id="wrapper">
-    <div id="first" style="font-family:'Amiri', serif;">
-	   <span class="w3-right w3-large" ></i> تواصل معنا     &nbsp;</span>
-	   <br>
-	   <hr style ="width: 400px; float: right;" dir ="right">
-	   <form action = "contactUsPHP.php" method = "POST" style = "float: right; height: auto; width: 100%; margin-right: 30px;" dir="rtl" >
+    <div id="first" style="font-family:'Amiri', serif; margin-right: 70px; font-size: 15px;">
+	   <span class="w3-right" style="font-size: 25px;"> تواصل معنا     &nbsp;</span>
+	   <br><br>
+	   <hr style ="width: 480px; float: right;" dir ="right">
+	   <form action = "contactUsPHP.php" method = "POST" style = "float: right; height: auto; width: 100%; margin-right: 50px;" dir="rtl" >
 	   <select Style="height: 30px; width: 150px;" name = "type">
         <option value="اقتراح" >اقتراح</option>
         <option value="شكوى" >شكوى</option>
@@ -245,13 +203,24 @@ and is wrapped around the whole page content, except for the footer in this exam
        </select>
 	   <br>
 	   <br>
-	   <textarea  name = "messageBody" placeholder="محتوى الرسالة" Style="height: 100px; width: 60%;" ></textarea>
+	   <textarea  name = "messageBody" placeholder="محتوى الرسالة" Style="height: 100px; width: 80%;" ></textarea>
 	   <br>
 	   <br>
 	   <input type ="submit" value ="إرسال" style="width: 70px;"/>
 	   </form>
 	</div>
-    <div id="second"></div>
+ <div id="second" class="w3-center" style=" margin-right: 300px; margin-top: 50px; font-size: 20px; font-family:'Amiri', serif;">
+	<br>
+    <a  style="text-decoration : none" href="Rules.php"> القوانين </a>   
+	<br>
+	<a  style="text-decoration : none" href="AboutUs.php">معلومات عنا </a>
+	<br>
+	<br>
+	 <span style = "font-size: 15px;">
+    	. 
+	 جميع الحقوق محفوظة 2017	&copy;
+	 </span>
+	</div>
     </div>
 	
 </footer>
